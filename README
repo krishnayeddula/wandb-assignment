@@ -1,5 +1,5 @@
 Successfully deployed the WANDB service on Google Cloud Platform (GCP) using the terraform-google-wandb module (version 9.4.1).
-Used Replit(Cloud based IDE) for this task
+
 
 Deployment Details:
 The deployment completed successfully, yielding the following outputs:
