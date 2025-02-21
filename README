@@ -4,6 +4,12 @@
  - endpoint URL: https://wandb-gcp.vaporwaresystems.com
  - endpoint IP: 35.244.129.48
 
+Artifacts:
+- Included all the screenshots of critcal resources that got deployed which include
+GKE Cluster, Redis memory store, SQL Server and Cloud Storage buckets
+- Included screenshot of Wandb homepage and system console
+- Included Python script that helped to provision 10 runs
+
 
 Caveats:
 - The domain vaporwaresystems.com is taking some time to propagate DNS A record changes so i manually pointed the hostname and IP in 
