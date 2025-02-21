@@ -5,6 +5,7 @@ Deployment Details:
 The deployment completed successfully, yielding the following outputs:
 Endpoint URL: https://wandb-gcp.vaporwaresystems.com
 Endpoint IP: 35.244.129.48
+GCS Bucket: wandb-sterling-koi
 
 Terraform Details:
 WANDB Module Version: 9.4.1
