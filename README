@@ -1,0 +1,12 @@
+ Deployed WANDB Service on Google Cloud Platform
+ Leveraged terrafrom-google-cloud module version 9.3.1 for this deployment
+ Deployment ran to completion with following outputs after terraform appy
+ - endpoint URL: https://wandb-gcp.vaporwaresystems.com
+ - endpoint IP: 35.244.129.48
+
+
+Caveats:
+- The domain vaporwaresystems.com is taking some time to propagate DNS A record changes so i manually pointed the hostname and IP in 
+  my /etc/hosts
+- Google managed SSL is taking time to provision and saying to wait for 24 hours.
+- For the above reason using http and static DNS resolution 
