@@ -9,9 +9,7 @@ for run in range(total_runs):
   wandb.init(
       # Set the project where this run will be logged
       project="wandb-assignment",
-      # We pass a run name (otherwise it’ll be randomly assigned, like sunshine-lollypop-10)
       name=f"run_{run}",
-      # Track hyperparameters and run metadata
       config={
       "learning_rate": 0.02,
       "architecture": "CNN",
@@ -19,14 +17,11 @@ for run in range(total_runs):
       "epochs": 10,
       })
 
-  # This simple block simulates a training loop logging metrics
   epochs = 10
   offset = random.random() / 5
   for epoch in range(2, epochs):
       acc = 1 - 2 ** -epoch - random.random() / epoch - offset
       loss = 2 ** -epoch + random.random() / epoch + offset
-
-      # 2️. Log metrics from your script to W&B
       wandb.log({"acc": acc, "loss": loss})
 
   # Mark the run as finished
