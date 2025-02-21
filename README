@@ -27,3 +27,6 @@ Screenshots of critical deployed resources, including:
  DNS Propagation Delay: The vaporwaresystems.com domain is taking time to propagate A record changes. As a workaround, I manually mapped the hostname and IP in /etc/hosts.
  Google-Managed SSL Delay: SSL certificate provisioning is still in progress, with an expected wait time of up to 24 hours.
  Temporary Access: Due to the SSL delay, the service is currently accessible over HTTP with a static DNS resolution.
+
+ Issues:
+Although the WANDB console deployment is up and running with one healthy replica, there is an additional pod in a CrashLoopBackOff state. I attempted to forcefully delete this pod, but the deployment automatically creates a new pod, which also enters the CrashLoopBackOff state. However, the overall functionality is not impacted, as the single healthy pod is maintaining normal operation.
