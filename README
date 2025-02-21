@@ -29,4 +29,4 @@ Screenshots of critical deployed resources, including:
  Temporary Access: Due to the SSL delay, the service is currently accessible over HTTP with a static DNS resolution.
 
  Issues:
-Although the WANDB console deployment is up and running with one healthy replica, there is an additional pod in a CrashLoopBackOff state. I attempted to forcefully delete this pod, but the deployment automatically creates a new pod, which also enters the CrashLoopBackOff state. However, the overall functionality is not impacted, as the single healthy pod is maintaining normal operation.
+Although the WANDB console deployment is up and running with one healthy replica(which is equal to no.of replicas for the deployment), there is an additional pod in a CrashLoopBackOff state. I attempted to forcefully delete this pod, but the deployment automatically creates a new pod, which also enters the CrashLoopBackOff state. However, the overall functionality is not impacted, as the single healthy pod is maintaining normal operation.
