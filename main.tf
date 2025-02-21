@@ -40,4 +40,3 @@ module "wandb" {
   #use_internal_queue  = true
 }
 
-# You'll want to update your DNS with the provisioned IP address
