@@ -11,7 +11,7 @@ Screenshots of critical deployed resources, including:
  GKE Cluster
  Redis Memory Store
  SQL Server
- Cloud Storage Buckets
+ Cloud Storage Bucket
  Screenshots of the WANDB homepage and system console
  A Python script used to provision 10 runs
 
