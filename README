@@ -1,9 +1,14 @@
 Successfully deployed the WANDB service on Google Cloud Platform (GCP) using the terraform-google-cloud module (version 9.4.1).
+Used Replit(Cloud based IDE) for this task
 
 Deployment Details:
 The deployment completed successfully, yielding the following outputs:
 Endpoint URL: https://wandb-gcp.vaporwaresystems.com
 Endpoint IP: 35.244.129.48
+
+Terraform Details:
+WANDB Module Version: 9.4.1
+State Storage: Google Cloud Storage (GCS) is used as the backend for storing the Terraform state.
 
 Artifacts:
 The wandb-artifacts folder contains:
@@ -14,6 +19,8 @@ Screenshots of critical deployed resources, including:
  Cloud Storage Bucket
  Screenshots of the WANDB homepage and system console
  A Python script used to provision 10 runs
+
+ 
 
  Caveats & Workarounds:
  DNS Propagation Delay: The vaporwaresystems.com domain is taking time to propagate A record changes. As a workaround, I manually mapped the hostname and IP in /etc/hosts.
