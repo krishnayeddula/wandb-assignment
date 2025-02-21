@@ -1,5 +1,5 @@
  Deployed WANDB Service on Google Cloud Platform
- Leveraged terrafrom-google-cloud module version 9.3.1 for this deployment
+ Leveraged terrafrom-google-cloud module version 9.4.1 for this deployment
  Deployment ran to completion with following outputs after terraform appy
  - endpoint URL: https://wandb-gcp.vaporwaresystems.com
  - endpoint IP: 35.244.129.48
